@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mini-app Shop v2</title>
+  <style>
+    body{font-family:system-ui,Arial,sans-serif;margin:16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+    .card{border:1px solid #ddd;border-radius:12px;padding:12px}
+    .row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+    .price{font-weight:600}
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    button{cursor:pointer;border:1px solid #333;background:#111;color:#fff;border-radius:8px;padding:8px 10px}
+    select, input{width:100%;padding:8px;border:1px solid #ccc;border-radius:8px}
+    .muted{color:#666;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1 id="shopName">Mini-app Shop v2</h1>
+    <button id="cartBtn">Panier (0)</button>
+  </div>
+  <div id="root" class="grid"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
