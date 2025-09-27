@@ -9,7 +9,6 @@
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
     .card{border:1px solid #ddd;border-radius:12px;padding:12px}
     .row{display:flex;gap:8px;align-items:center;justify-content:space-between}
-    .price{font-weight:600}
     .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
     button{cursor:pointer;border:1px solid #333;background:#111;color:#fff;border-radius:8px;padding:8px 10px}
     select, input{width:100%;padding:8px;border:1px solid #ccc;border-radius:8px}
@@ -23,7 +22,7 @@
   </div>
   <div id="root" class="grid"></div>
 
-  <!-- chemin corrigé -->
-  <script src="./app.js"></script>
+  <!-- chemin ABSOLU + bust cache -->
+  <script src="/webapp/app.js?v=2"></script>
 </body>
 </html>
